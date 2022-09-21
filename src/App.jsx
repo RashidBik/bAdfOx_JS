@@ -2,6 +2,7 @@ import { useState } from 'react'
 import {Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import About from './Pages/About'
+import Home from './Pages/Home'
 import Learn from './Pages/Learn'
 import Play from './Pages/Play'
 
@@ -12,9 +13,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route index="/" element={<Play />} />
-        <Route index="learn" element={<Learn />} />
-        <Route index="about" element={<About />} />
+        <Route index="/" element={<Home />} />
+        <Route path="/play" element={<Play />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   )
