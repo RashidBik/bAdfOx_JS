@@ -3,7 +3,7 @@ import React from 'react'
 const Learn = () => {
   return (
     <div>
-      Learn
+      <h1>JavaScript Array Methods</h1>
     </div>
   )
 }
