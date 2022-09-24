@@ -7,6 +7,8 @@ const shapes = [
       count: 3,
       href: '',
       exec: '.Slice(1,6)',
+      next: '',
+      prev: 'reverse',
       tools1: {
         a1: '🔷',
         b1: '🔴',

@@ -22,8 +22,8 @@ const Play = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div className=''>
-      <Context.Provider value={dispatch}>
-        {state}
+      <Context.Provider value={{fState: state, fDispatch: dispatch}}>
+        {!state ? <Filter /> : state}
       </Context.Provider>
     </div>
   )
