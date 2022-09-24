@@ -1,11 +1,14 @@
 import React from 'react'
 import CardOne from '../CardOne'
+
 const shapes = [
   {
     name: 'Filter',
     bgBefor: 'bg-white',
     count: 1,
     href: '',
+    next: 'reverse',
+    prev: '',
     exec: '.filter(◻️)',
     tools1: {
       a1: '🔴',

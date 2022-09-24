@@ -1,7 +1,12 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+import { Context } from '../Pages/Play';
 
 const CardOne = ({shapes}) => {
   const [execute, setExecute] = useState(false);
+  const navigate = useNavigate();
+  const context = useContext(Context);
+
   return (
     <>
     {shapes.map((item,index) => {
@@ -46,9 +51,10 @@ const CardOne = ({shapes}) => {
        <a 
         href={item.href}
         className='btn bg-blue-700 text-white hover:shadow-blue-400'>Syntax</a>
-       <button className='btn bg-red-700 hover:shadow-red-400'>Prv</button>
-       <button className='btn bg-green-700 hover:shadow-green-400'>nex</button>
+       <button className='btn bg-red-700 hover:shadow-red-400' >Prv</button>
+       <button className='btn bg-green-700 hover:shadow-green-400' onClick={()=> navigate(item.next)}>nex</button>
      </footer>
+     {context.dispatch(item.next)}
     </main>
       )
     })}
