@@ -4,21 +4,34 @@
 
 @layer base {
   main {
-      @apply rounded-lg p-2;
+      @apply rounded-lg p-2 h-[99vh];
     }
-  button {
-      @apply border shadow px-2 rounded-md;
+  .btn {
+      @apply border shadow px-2 rounded-md hover:shadow-md;
     }
   header {
       @apply flex p-2 justify-between;
   }
   section {
-    @apply p-2;
+    @apply p-2 h-[83vh];
   }
   footer {
-    @apply flex justify-around;
+    @apply flex justify-around items-baseline py-2 h-[7vh];
   }
   .arr {
-    @apply p-2 rounded-lg;
+    @apply p-6 rounded-lg grid grid-cols-3 gap-6 items-center;
   }
+  .squar {
+    @apply w-[40px] h-[40px] bg-green-900;
+  }
+  .rectingle {
+    @apply w-[0] h-[0] border-[20px] border-t-0 border-b-[40px] border-b-green-900;
+  }
+  .circle {
+    @apply w-[40px] h-[40px] rounded-full bg-green-900;
+  }
+  .shapes {
+    @apply text-[40px];
+  }
+
 }
