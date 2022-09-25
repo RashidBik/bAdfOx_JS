@@ -4,7 +4,7 @@
 
 @layer base {
   main {
-      @apply rounded-lg p-2 h-[99vh];
+      @apply rounded-lg p-2 h-[99vh] lg:h-[80vh];
     }
   .btn {
       @apply border shadow px-2 rounded-md hover:shadow-md;
@@ -13,7 +13,7 @@
       @apply flex p-2 justify-between;
   }
   section {
-    @apply p-2 h-[83vh];
+    @apply p-2 h-[83vh] lg:h-[70vh];
   }
   footer {
     @apply flex justify-around items-baseline py-2 h-[7vh];

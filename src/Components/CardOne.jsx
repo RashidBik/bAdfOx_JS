@@ -10,14 +10,14 @@ const CardOne = ({shapes}) => {
     <>
     {shapes.map((item,index) => {
       return (
-        <main key={index} className='bg-gray-300'>
+        <main key={index} className='bg-gray-300 lg:p-6'>
      <header className=''>
       <button className='btn'
       onClick={()=> navigate('/')}>Exit</button>
       <div className=''>{item.name}</div>
       <div></div>
      </header>
-      <section className=''>
+      <section className='md:flex flex-row lg:p-10'>
        <div className={`arr ${item.bgBefor}`}>
          <div className="shapes">{` ${item.tools1.a1}`}</div>
          <div className="shapes">{` ${item.tools1.b1}`}</div>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const About = () => {
   const navigate = useNavigate();
   return (
-    <div className='container p-2 h-[100vh]'>
+    <div className='container p-2 md:px-12 lg:px-40 lg:text-xl h-[100vh]'>
       <h2 className='text-center p-4'>About Me</h2>
       <div className='bg-gray-100 rounded-lg p-2'>
        <div className='syntax p-4 text-left'>

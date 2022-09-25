@@ -34,7 +34,7 @@ const reducer = (state,action) => {
 const Play = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className=''>
+    <div className='md:px-12 lg:px-40 lg:text-xl lg:py-10'>
       <Context.Provider value={{fState: state, fDispatch: dispatch}}>
         {!state ? <Filter /> : state}
       </Context.Provider>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Learn = () => {
   const navigate = useNavigate();
   return (
-    <div className='container'>
+    <div className='container md:px-12 lg:px-40 lg:text-xl'>
       <h1>JavaScript Array Methods</h1>
         <div className='p-2 bg-gray-100'>
           <div className='text-green-300 font-black bg-green-800 rounded-lg text-left p-1'>
