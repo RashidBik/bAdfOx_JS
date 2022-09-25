@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Pages/Play';
 
 const SliceSyn = () => {
+    const context = useContext(Context);
   return (
     <div className='container'>
         <h1 className='head'>Array.prototype.slice()</h1>
@@ -40,7 +42,8 @@ const SliceSyn = () => {
         </div>
       </div>
       <div className='got'>
-        <button className='btn text-xl px-3 bg-yellow-500'>Got it</button>
+        <button className='btn text-xl px-3 bg-yellow-500'
+        onClick={() => context.fDispatch('slice')}>Got it</button>
       </div>
     </div>
   )

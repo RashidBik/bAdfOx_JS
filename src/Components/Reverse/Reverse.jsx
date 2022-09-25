@@ -5,7 +5,7 @@ const shapes = [
     name: 'Reverse',
     bgBefor: 'bg-white',
     count: 2,
-    href: '',
+    syntax: 'reverseSyn',
     exec: '.Reverse()',
     next: 'slice',
     prev: 'filter',

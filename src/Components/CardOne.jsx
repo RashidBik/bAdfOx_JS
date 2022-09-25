@@ -12,7 +12,8 @@ const CardOne = ({shapes}) => {
       return (
         <main key={index} className='bg-gray-300'>
      <header className=''>
-      <button className=''>exit</button>
+      <button className='btn'
+      onClick={()=> navigate('/')}>Exit</button>
       <div className=''>{item.name}</div>
       <div></div>
      </header>
@@ -52,7 +53,7 @@ const CardOne = ({shapes}) => {
        <button className='btn bg-red-700 hover:shadow-red-400' 
        onClick={() => context.fDispatch(item.prev)}>Prv</button>
        <button className='btn bg-green-700 hover:shadow-green-400' 
-       onClick={() => context.fDispatch(item.next)}>nex</button>
+       onClick={() => context.fDispatch(item.next)}>Nex</button>
      </footer>
     </main>
       )

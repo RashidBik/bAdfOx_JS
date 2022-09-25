@@ -6,7 +6,7 @@ const shapes = [
     name: 'Filter',
     bgBefor: 'bg-white',
     count: 1,
-    href: '',
+    syntax: 'filterSyn',
     next: 'reverse',
     prev: '',
     exec: '.filter(◻️)',

@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Pages/Play';
 
 const FilterSyn = () => {
+  const context = useContext(Context);
   return (
     <div className='container'>
         <h1 className='head'>Array.prototype.filter()</h1>
@@ -41,7 +43,8 @@ const FilterSyn = () => {
         </div>
       </div>
       <div className='got'>
-        <button className='btn text-xl px-3 bg-yellow-500'>Got it</button>
+        <button className='btn text-xl px-3 bg-yellow-500'
+        onClick={() => context.fDispatch('filter')}>Got it</button>
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ const shapes = [
       count: 3,
       syntax: 'sliceSyn',
       exec: '.Slice(1,6)',
-      next: '',
+      next: 'splice',
       prev: 'reverse',
       tools1: {
         a1: '🔷',

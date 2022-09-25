@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../Pages/Play'
 
 const ReverseSyn = () => {
+  const context = useContext(Context);
   return (
     <div className='container'>
         <h1 className='head'>Array.prototype.reverse()</h1>
@@ -28,7 +30,8 @@ const ReverseSyn = () => {
         </div>
       </div>
       <div className='got'>
-        <button className='btn text-xl px-3 bg-yellow-500'>Got it</button>
+        <button className='btn text-xl px-3 bg-yellow-500'
+        onClick={() => context.fDispatch('reverse')}>Got it</button>
       </div>
     </div>
   )
