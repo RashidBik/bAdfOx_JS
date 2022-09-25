@@ -18,20 +18,32 @@
   footer {
     @apply flex justify-around items-baseline py-2 h-[7vh];
   }
+  h1 {
+    @apply text-[23px] font-black bg-gray-200 rounded my-4 text-center;
+  }
+  h2 {
+    @apply text-[16px] font-black text-red-900;
+  }
   .arr {
     @apply p-6 rounded-lg grid grid-cols-3 gap-6 items-center;
   }
-  .squar {
-    @apply w-[40px] h-[40px] bg-green-900;
+  .container {
+    @apply text-left p-1 bg-gray-300;
   }
-  .rectingle {
-    @apply w-[0] h-[0] border-[20px] border-t-0 border-b-[40px] border-b-green-900;
+  .head {
+    @apply text-center text-blue-900 bg-gray-300;
   }
-  .circle {
-    @apply w-[40px] h-[40px] rounded-full bg-green-900;
+  .syntax {
+    @apply bg-yellow-500 rounded-lg p-4;
   }
   .shapes {
     @apply text-[40px];
+  }
+  .usage {
+    @apply font-sans text-red-900;
+  }
+  .got {
+    @apply p-4 flex justify-end;
   }
 
 }

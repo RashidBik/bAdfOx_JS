@@ -2,6 +2,8 @@ import React, { useReducer } from 'react'
 import Filter from '../Components/Filter/Filter'
 import Reverse from '../Components/Reverse/Reverse';
 import Slice from '../Components/Slice/Slice';
+import SliceSyn from '../Components/Slice/SliceSyn';
+
 
 export const Context = React.createContext();
 
@@ -10,10 +12,16 @@ const reducer = (state,action) => {
   switch (action) {
     case 'filter':
       return <Filter/>; 
+    case 'filterSyn':
+      return <FilterSyn/>; 
     case 'reverse':
-      return <Reverse/>;  
+      return <Reverse/>;
+    case 'reverseSyn':
+      return <ReverseSyn/>;    
     case 'slice':
       return <Slice/>;
+    case 'sliceSyn':
+      return <SliceSyn/>;
     default:
       break;
   }

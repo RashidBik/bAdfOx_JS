@@ -5,7 +5,7 @@ const shapes = [
       name: 'Slice',
       bgBefor: 'bg-white',
       count: 3,
-      href: '',
+      syntax: 'sliceSyn',
       exec: '.Slice(1,6)',
       next: '',
       prev: 'reverse',

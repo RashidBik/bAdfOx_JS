@@ -47,9 +47,8 @@ const CardOne = ({shapes}) => {
       </section>
      <footer className=''>
        <div className='btn bg-yellow-500 rounded-full'>{item.count}</div>
-       <a 
-        href={item.href}
-        className='btn bg-blue-700 text-white hover:shadow-blue-400'>Syntax</a>
+       <button className='btn bg-blue-700 text-white hover:shadow-blue-400'
+       onClick={() => context.fDispatch(item.syntax)}>Syntax</button>
        <button className='btn bg-red-700 hover:shadow-red-400' 
        onClick={() => context.fDispatch(item.prev)}>Prv</button>
        <button className='btn bg-green-700 hover:shadow-green-400' 
