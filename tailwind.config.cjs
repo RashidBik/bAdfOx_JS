@@ -6,7 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-       
+       fontFamily: {
+        spice:  ["'Bungee Spice'", 'cursive'],
+        pacifico: ["'Pacifico'", 'cursive'],
+
+       },
     },
   },
   plugins: [],
