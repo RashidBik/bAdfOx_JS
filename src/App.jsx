@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import {BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
+import React from 'react'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -8,7 +8,6 @@ import Play from './Pages/Play'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
