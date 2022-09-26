@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Routes, Route, useNavigate } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -11,14 +11,14 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="">
+    <Router>
       <Routes>
         <Route index="/" element={<Home />} />
         <Route path="/play" element={<Play />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </div>
+    </Router>
   )
 }
 
